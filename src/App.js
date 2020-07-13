@@ -1,9 +1,17 @@
 import React from 'react';
-import './App.css';
 
 function App() {
   return (
     <div className="grid-container">
+      <header>
+        <a href="/">Warrior Gamer Cart</a>
+      </header>
+      <main>
+        Lista de produtos
+      </main>
+      <footer>
+        Desenvolvido por Leonardo Dias.
+      </footer>
     </div>
   );
 }
