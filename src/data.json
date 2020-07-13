@@ -1,0 +1,58 @@
+{
+  "products": [
+      {
+          "_id": "1",
+          "name": "Corsair Void Elite",
+          "image": "./images/d1.jpg",
+          "price": 300,
+          "brand": "Headset Gamer",
+          "rating": 4.5,
+          "numReviews": 10
+      },
+      {
+          "_id": "2",
+          "name": "Razer Electra V2.7.1",
+          "image": "./images/d2.jpg",
+          "price": 398,
+          "brand": "Headset Gamer",
+          "": 4.8,
+          "numReviews": 10
+      },
+      {
+          "_id": "3",
+          "name": "Logitech G230",
+          "image": "./images/d3.jpg",
+          "price": 250,
+          "brand": "Headset Gamer",
+          "rating": 4.5,
+          "numReviews": 10
+      },
+      {
+          "_id": "4",
+          "name": "Logitech G935",
+          "image": "./images/d4.jpg",
+          "price": 190,
+          "brand": "Headset Gamer",
+          "rating": 3,
+          "numReviews": 10
+      },
+      {
+          "_id": "5",
+          "name": "Multilaser P2 Preto e Vermelho",
+          "image": "./images/d5.jpg",
+          "price": 280,
+          "brand": "Headset Gamer",
+          "rating": 4.2,
+          "numReviews": 10
+      },
+      {
+          "_id": "6",
+          "name": "Corsair Corsair Void Elite Wireless Elite",
+          "image": "./images/d6.jpg",
+          "price": 300,
+          "brand": "Headset Gamer",
+          "rating": 4.5,
+          "numReviews": 10
+      }
+  ]
+}
