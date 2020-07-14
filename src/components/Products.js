@@ -19,14 +19,14 @@ export default class Products extends Component {
                   <div>
                     {formatCurrency(product.price)}
                   </div>
-                  <div className="btn">
-                      <img
+                  <div onClick={() => {this.props.addToCart(product)}} className="btn">
+                    <img
                         className="cart"
                         src="/images/cart.svg"
                         alt="Icone carrinho"
-                      />
-                      <span>Adicionar ao carrinho </span>{" "}
-                    </div>
+                    />
+                    <span>Adicionar ao carrinho </span>{" "}
+                  </div>
                 </div>
               </div>
             </li>
