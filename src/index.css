@@ -30,6 +30,7 @@ header{
   background-color: #000000;
   color: #ffffff;
 
+  font-size: 25px;
   padding: 15px;
 
   display: flex;
@@ -167,4 +168,18 @@ footer{
 }
 .btn:hover span{
   clip-path: circle(0px at 125px 27.5px);
+}
+
+/* Filtro de busca */
+
+.filter{
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  margin: 10px;
+  border-bottom: 2px solid #000;
+}
+
+.filter div{
+  flex: 1;
 }
