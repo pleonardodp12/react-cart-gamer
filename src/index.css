@@ -134,7 +134,7 @@ footer{
   padding: 20px;
   border: 2px #f70131 solid;
   border-radius: 5px;
-  background: #fff;
+  background: #f70131;
   cursor: pointer;
   display: flex;
   align-items: center;
@@ -144,15 +144,17 @@ footer{
 }
 
 .btn img{
-  width: 25px;
+  width: 28px;
   position: absolute;
   top: 48.5%;
   left: 20%;
   transform: translate(-50%, -50%);
   transition: 0.50s;
+  display: flex;
+  align-items: center;
 }
 .btn span{
-  color: #000;
+  color: #fff;
   font-size: 18px;
   position: absolute;
   margin-left: 30px;
@@ -162,7 +164,8 @@ footer{
 .btn:hover{
   cursor: pointer;
   color: #ffffff;
-  box-shadow: inset 0 100px 0 0 #f70131;
+  box-shadow: inset 0 100px 0 0 #f7013f;
+  border: 2px #f7013f solid;
 }
 .btn:hover img{
   left: 50%;
