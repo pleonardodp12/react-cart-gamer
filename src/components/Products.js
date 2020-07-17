@@ -21,7 +21,7 @@ export default class Products extends Component {
                   </div>
                   <div onClick={() => {this.props.addToCart(product)}} className="btn">
                     <img
-                        className="cart"
+                        className="cartImage"
                         src="/images/cart.svg"
                         alt="Icone carrinho"
                     />
