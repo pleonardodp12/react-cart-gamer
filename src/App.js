@@ -13,11 +13,16 @@ class App extends Component {
       sort: "",
     }
   }
+
+  createOrder = (order) => {
+    alert("Compra salva para: " + order.name)
+  }
   removeFromCart = (product) => {
     const cartItems = this.state.cartItems.slice();
-    this.setState({cartItems: cartItems.filter(x=>x._id !== product._id),
+    this.setState({cartItems: cartItems.filter((x)=> x._id !== product._id),
     });
-    localStorage.setItem("cartItems", JSON.stringify(cartItems));
+    localStorage.setItem("cartItems",
+    JSON.stringify(cartItems.filter((x)=> x._id !== product._id)));
   };
 
   addToCart = (product) => {
@@ -55,7 +60,8 @@ class App extends Component {
     return (
       <div className="grid-container">
         <header>
-          <a href="/">Warrior Gamer Cart</a>
+          
+          <a href="/"><img src="/images/helmet.svg" alt="capacete"/>Warrior Gamer Cart</a>
         </header>
         <main>
           <div className="content">
@@ -70,7 +76,7 @@ class App extends Component {
               <Products products={this.state.products} addToCart={this.addToCart}></Products>
             </div>
             <div className="sidebar">
-              <Cart cartItems={this.state.cartItems} removeFromCart={this.removeFromCart} />
+              <Cart cartItems={this.state.cartItems} removeFromCart={this.removeFromCart} createOrder={this.createOrder}/>
             </div>
           </div>
         </main>
