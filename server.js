@@ -1,10 +1,10 @@
-import express from 'express';
-import bodyParser from 'body-parser';
-import mongoose from 'mongoose';
-import shortid from 'shortid';
+const express = require('express')
+const bodyParser = require('body-parser')
+const mongoose = require('mongoose')
+const shortid = require('shortid')
 
 const app = express();
-app.use(bodyParser);
+app.use(bodyParser.json());
 
 mongoose.connect("mongodb://localhost/react-cart-gamer-db", {
   useNewUrlParser: true,
@@ -13,9 +13,10 @@ mongoose.connect("mongodb://localhost/react-cart-gamer-db", {
 });
 
 const Product = mongoose.model("products", new mongoose.Schema({
-  _id: { type: shortid.generate },
+  _id: { type: String, default: shortid.generate },
   name: String,
   image: String,
+  description: String,
   price: Number,
   brand: String,
   rating: Number,
@@ -33,6 +34,11 @@ app.post("/api/products", async (req, res) =>{
   const savedProduct = await newProducts.save();
   res.send(savedProduct);
 });
+
+app.delete("/api/products/:id", async(req, res)=>{
+  const deletedProduct = await Product.findByIdAndDelete(req.params.id);
+  res.send(deletedProduct);
+})
 
 const port = process.env.PORT || 5000;
 
