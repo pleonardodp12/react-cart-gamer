@@ -1,10 +1,10 @@
 ## 💻 About
 
-♻️ Warrior is a project of virtual shop where you can buy headsets. It’s possible to add your product in a cart and remove it whenever you want.  If you need to reload the page your products will not be lost! When you will be certain, you can just confirm the shopping and answer a form with your dices
+♻️ warrior is a virtual store project where you can buy headphones. You can add your product to a cart and pick it up whenever you want. If you need to reload the page, your products will not be lost! It's just confirm your purchase and fill out the form with your dices when you'll sure.
 
 ## 🛠 Technologies
 
-It was used that tools in this project: 
+In this Project was used wich tools:
 
 - [React][reactjs]
 - [Javascript][javascript]
