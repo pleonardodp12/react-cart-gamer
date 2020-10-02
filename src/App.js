@@ -3,6 +3,8 @@ import Products from './components/Products';
 import Filter from './components/Filter';
 import data from './data.json';
 import Cart from './components/Cart';
+import store from './store';
+import { Provider } from 'react-redux';
 
 class App extends Component {
   constructor(props){
@@ -57,33 +59,35 @@ class App extends Component {
 
   filterProduct(e){}
   render(){
-    return (
-      <div className="grid-container">
-        <header>
-          
-          <a href="/"><img src="/images/helmet.svg" alt="capacete"/>Warrior Gamer Cart</a>
-        </header>
-        <main>
-          <div className="content">
-            <div className="main">
-              <Filter
-                count={this.state.products.length}
-                sort={this.state.sort}
-                filterProducts={this.filterProducts}
-                sortProducts={this.sortProducts}
-              />
+      return (
+      <Provider store={store}>
+        <div className="grid-container">
+          <header>
+            
+            <a href="/"><img src="/images/helmet.svg" alt="capacete"/>Warrior Gamer Cart</a>
+          </header>
+          <main>
+            <div className="content">
+              <div className="main">
+                <Filter
+                  count={this.state.products.length}
+                  sort={this.state.sort}
+                  filterProducts={this.filterProducts}
+                  sortProducts={this.sortProducts}
+                />
 
-              <Products products={this.state.products} addToCart={this.addToCart}></Products>
+                <Products products={this.state.products} addToCart={this.addToCart}></Products>
+              </div>
+              <div className="sidebar">
+                <Cart cartItems={this.state.cartItems} removeFromCart={this.removeFromCart} createOrder={this.createOrder}/>
+              </div>
             </div>
-            <div className="sidebar">
-              <Cart cartItems={this.state.cartItems} removeFromCart={this.removeFromCart} createOrder={this.createOrder}/>
-            </div>
-          </div>
-        </main>
-        <footer>
-          Desenvolvido por Leonardo Dias.
-        </footer>
-      </div>
+          </main>
+          <footer>
+            Desenvolvido por Leonardo Dias.
+          </footer>
+        </div>
+      </Provider>
     );
   }
 }
