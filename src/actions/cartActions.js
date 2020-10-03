@@ -1,7 +1,7 @@
 import { ADD_TO_CART, REMOVE_FROM_CART } from "../types";
 
-export const addToCart = (items, products) => (dispatch) => {
-  const cartItems = items.slice();
+export const addToCart = (items, products) => (dispatch, getState) => {
+  const cartItems = getState().cart.cartItems.slice();
   cartItems.forEach (item => {
     let alreadyExist = false;
     if (item._id === products._id){
