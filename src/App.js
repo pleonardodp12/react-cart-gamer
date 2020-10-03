@@ -15,22 +15,19 @@ class App extends Component {
           <a href="/"><img src="/images/helmet.svg" alt="capacete"/>Warrior Gamer Cart</a>
         </header>
         <main>
-          <div className="content">
-            <div className="main">
-              <Filter />
-
-              <Products ></Products>
+            <div className="content">
+              <div className="main">
+                <Filter></Filter>
+                <Products></Products>
+              </div>
+              <div className="sidebar">
+                <Cart />
+              </div>
             </div>
-            <div className="sidebar">
-              <Cart/>
-            </div>
-          </div>
-        </main>
-        <footer>
-          Desenvolvido por Leonardo Dias.
-        </footer>
-      </div>
-    </Provider>
+          </main>
+          <footer>Desenvolvido por leonardo Dias.</footer>
+        </div>
+      </Provider>
     );
   }
 }
