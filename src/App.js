@@ -7,30 +7,30 @@ import { Provider } from 'react-redux';
 
 class App extends Component {
   render(){
-      return (
-      <Provider store={store}>
-        <div className="grid-container">
-          <header>
-            
-            <a href="/"><img src="/images/helmet.svg" alt="capacete"/>Warrior Gamer Cart</a>
-          </header>
-          <main>
-            <div className="content">
-              <div className="main">
-                <Filter />
+    return (
+    <Provider store={store}>
+      <div className="grid-container">
+        <header>
+          
+          <a href="/"><img src="/images/helmet.svg" alt="capacete"/>Warrior Gamer Cart</a>
+        </header>
+        <main>
+          <div className="content">
+            <div className="main">
+              <Filter />
 
-                <Products ></Products>
-              </div>
-              <div className="sidebar">
-                <Cart />
-              </div>
+              <Products ></Products>
             </div>
-          </main>
-          <footer>
-            Desenvolvido por Leonardo Dias.
-          </footer>
-        </div>
-      </Provider>
+            <div className="sidebar">
+              <Cart/>
+            </div>
+          </div>
+        </main>
+        <footer>
+          Desenvolvido por Leonardo Dias.
+        </footer>
+      </div>
+    </Provider>
     );
   }
 }
