@@ -1,4 +1,4 @@
-const { CLEAR_ORDER } = require("../types");
+const { CLEAR_ORDER, CREATE_ORDER } = require("../types");
 
 const orderReducer = (state = {}, action) => {
   switch (action.type){

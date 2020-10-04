@@ -344,3 +344,32 @@ input:focus {
 .product-price-modal button {
   padding: 15px 40px;
 }
+
+/* Compra */
+
+.order-details{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+}
+
+.order-details li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.order-details li div {
+  padding: 10px;
+}
+
+.order-details .items {
+  text-align: right;
+  padding: 0;
+}
+
+.success-message{
+  color: green;
+}

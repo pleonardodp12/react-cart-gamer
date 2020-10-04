@@ -51,7 +51,7 @@ const Order = mongoose.model("order", new mongoose.Schema({
   cartItems: [
     {
       _id: String,
-      title: String,
+      name: String,
       price: Number,
       count: Number
     },
