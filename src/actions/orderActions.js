@@ -1,7 +1,7 @@
 import { CLEAR_CART, CLEAR_ORDER, CREATE_ORDER } from "../types";
 
 export const createOrder  = (order) => (dispatch) => {
-  fetch("/api/orders", {
+  fetch("https://warrior-gamer.herokuapp.com/api/orders", {
     method: "POST",
     headers: {
       "Content-Type" : "application/json",

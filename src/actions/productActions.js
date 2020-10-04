@@ -1,7 +1,7 @@
 import { FETCH_PRODUCTS, ORDER_PRODUCTS_BY_PRICE } from "../types";
 
 export const fetchProducts = () => async (dispatch) => {
-  const res = await fetch("api/products");
+  const res = await fetch("https://warrior-gamer.herokuapp.com/api/products");
   const data = await res.json();
   console.log(data)
   dispatch({
