@@ -1,6 +1,10 @@
+# Warrior Gamer
+
+Link: https://warrior-cart-gamer.netlify.app/
+
 ## 💻 About
 
-♻️ warrior is a virtual store project where you can buy headphones. You can add your product to a cart and pick it up whenever you want. If you need to reload the page, your products will not be lost! It's just confirm your purchase and fill out the form with your dices when you'll sure.
+⚔️ warrior is a virtual store project where you can buy headphones. You can add your product to a cart and pick it up whenever you want. If you need to reload the page, your products will not be lost! It's just confirm your purchase and fill out the form with your dices when you'll sure.
 
 ## 🛠 Technologies
 
@@ -12,7 +16,8 @@ In this Project was used wich tools:
 
 ### Warrior Gamer
 
-![React-cart-gamer](https://user-images.githubusercontent.com/54605079/90682723-ca1bf880-e23b-11ea-9b0a-54867360f12b.gif)
+![React-cart-gamer](https://user-images.githubusercontent.com/54605079/95030162-1c966480-0684-11eb-8daa-000ebadcaa78.png)
+]
 
 
 
