@@ -2,11 +2,20 @@ const express = require('express')
 const bodyParser = require('body-parser')
 const mongoose = require('mongoose')
 const shortid = require('shortid')
+const cors = require('cors')
+const { config } = require('dotenv')
+const { join } = require('path')
+
+const path = join(__dirname, '.env')
+config({path})
 
 const app = express();
 app.use(bodyParser.json());
+app.use(cors());
 
-mongoose.connect("mongodb://localhost/react-cart-gamer-db", {
+
+
+mongoose.connect(process.env.DATABASE_URL, {
   useNewUrlParser: true,
   useCreateIndex: true,
   useUnifiedTopology: true,
